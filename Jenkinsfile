@@ -27,7 +27,7 @@ pipeline {
 
         stage('NPM Audit (Security Scan)') {
             steps {
-                
+                sh 'npm audit || true'
             }
         }
     }
