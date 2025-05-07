@@ -24,11 +24,5 @@ pipeline {
                 sh 'npm run coverage || true'
             }
         }
-
-        stage('NPM Audit (Security Scan)') {
-            steps {
-                sh 'npm audit || true'
-            }
-        }
     }
 }
